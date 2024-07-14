@@ -15,9 +15,12 @@ def about():
     return render_template("about.html" , page_title= "About")
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
-    return render_template("contact.html" , page_title= "Contact")
+    if request.method == "POST":
+        flash("Thanks {}, we have received your message!".format(
+            request.form.get("name")))
+    return render_template("contact.html", page_title="Contact")
 
 
 @app.route("/services")

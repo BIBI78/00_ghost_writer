@@ -7,21 +7,21 @@
     <link href="css/styles.css" rel="stylesheet" />
     
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-      <!-- EMAIL SCRIPT -->
-      <script type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-   </script>
-   <!--  -->
-   <script type="text/javascript">
-    (function(){
-       emailjs.init({
-         publicKey: "C6QE7V1F_FBf2I8vx",
-       });
-     //   emailjs.send("service_7ctr8xc","template_em43o3t");
-    })();
- </script>
+
     
     <title>00 GHOST WRITER</title>
+    <!-- EMAIL SCRIPT -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "C6QE7V1F_FBf2I8vx",
+      });
+    //   emailjs.send("service_7ctr8xc","template_em43o3t");
+   })();
+</script>
   
 </head>
 <body id="page-top">
@@ -49,7 +49,7 @@
         </div>
     </header>
     <!-- About-->
-    
+
     <section class="page-section bg-primary" id="about">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -74,14 +74,8 @@
                         <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
                         <h3 class="h4 mb-2">Service 1</h3>
                         <p class="text-muted mb-0">
-                            Ihr naht euch wieder, schwankende Gestalten!
-                            Die früh sich einst dem trüben Blick gezeigt.
-                            Versuch ich wohl euch diesmal fest zu halten?
-                            Fühl ich mein Herz noch jenem Wahn geneigt?
-                            Ihr drängt euch zu! nun gut, so mögt ihr walten,
-                            Wie ihr aus Dunst und Nebel um mich steigt;
-                            Mein Busen fühlt sich jugendlich erschüttert
-                            Vom Zauberhauch, der euren Zug umwittert.</p>
+                            I can help you polish your essay for stylistic improvement. 
+                           </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -89,14 +83,7 @@
                         <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
                         <h3 class="h4 mb-2">Service 2</h3>
                         <p class="text-muted mb-0">
-                            Ihr bringt mit euch die Bilder froher Tage,
-                            Und manche liebe Schatten steigen auf; 
-                            Gleich einer alten halbverklungnen Sage,
-                            Kommt erste Lieb und Freundschaft mit herauf;
-                            Der Schmerz wird neu, es wiederholt die Klage
-                            Des Lebens labyrinthisch irren Lauf,
-                            Und nennt die Guten, die, um schöne Stunden 
-                            Vom Glück getäuscht, vor mir hinweggeschwunden.</p>
+                            I can flesh out the rough draft of your essay or short story</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -104,14 +91,7 @@
                         <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
                         <h3 class="h4 mb-2">Service 3</h3>
                         <p class="text-muted mb-0">
-                            Sie hören nicht die folgenden Gesänge,
-                            Die Seelen, denen ich die ersten sang;
-                            Zerstoben ist das freundliche Gedränge,
-                            Verklungen ach! der erste Widerklang. 
-                            Mein Leid ertönt der unbekannten Menge,
-                            Ihr Beifall selbst macht meinem Herzen bang,
-                            Und was sich sonst an meinem Lied erfreuet,
-                            Wenn es noch lebt, irrt in der Welt zerstreuet.
+                            I can help you brainstorm ideas to write about from your life story.
                         </p>
                     </div>
                 </div>
@@ -120,14 +100,7 @@
                         <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
                         <h3 class="h4 mb-2">Service 4</h3>
                         <p class="text-muted mb-0">
-                            Und mich ergreift ein längst entwöhntes Sehnen 
-                            Nach jenem stillen ernsten Geisterreich,
-                            Es schwebet nun in unbestimmten Tönen
-                            Mein lispelnd Lied, der Äolsharfe gleich,
-                            Ein Schauer fasst mich, Träne folgt den Tränen,
-                            Das strenge Herz es fühlt sich mild und weich; 
-                            Was ich besitze seh ich wie im Weiten,
-                            Und was verschwand wird mir zu Wirklichkeiten</p>
+                            I can help you organize your thoughts into a coherent story.</p>
                     </div>
                 </div>
             </div>
@@ -136,8 +109,6 @@
    
     <!-- Portfolio-->
    
-     
-
      
   
     <!-- Call to action-->
@@ -148,38 +119,41 @@
         </div>
     </section>
     <!-- Contact-->
-</header>
-<section class="container-fluid">
-<div class="row bg-color-contact">
-       <div class="col">
-           <h3 class="contact-heading uppercase text-center">Got a project in mind?</h3>
-           <h5 class="uppercase text-center">Let's work together!</h5>
-
-           <div class="center-form">
-                <form onsubmit="return sendMail(this);">
-                   <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
-                   <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
-                   <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Project description" required></textarea>
-                   <div class="form-row text-center">
-                       <div class="col">
-                           <button type="submit" class="btn btn-secondary">Send Project Request</button>
-                       </div>
-                   </div>
-               </form>
-               <!-- Thank you message element -->
-                  <div class="thankYouOverlay" id="thankYouOverlay">
-   <div class="thankYouMessage" id="thankYouMessage">
-       <p>Thank you for your project request. We will get back to you soon!</p>
-   </div>
+    <section class="container-fluid">
+        <div class="row bg-color-contact">
+               <div class="col">
+                   <h3 class="contact-heading uppercase text-center">Got a project in mind?</h3>
+                   <h5 class="uppercase text-center">Let's work together!</h5>
    
-               <!--  -->
+                   <div class="center-form">
+                        <form onsubmit="return sendMail(this);">
+                           <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
+                           <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
+                           <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Project description" required></textarea>
+                           <div class="form-row text-center">
+                               <div class="col">
+                                   <button type="submit" class="btn btn-secondary">Send Project Request</button>
+                               </div>
+                           </div>
+                       </form>
+                       <!-- Thank you message element -->
+                          <div class="thankYouOverlay" id="thankYouOverlay">
+           <div class="thankYouMessage" id="thankYouMessage">
+               <p>Thank you for your project request. We will get back to you soon!</p>
            </div>
-
-       </div>
-   </div>
+           
+                       <!--  -->
+                   </div>
    
-</section>
+               </div>
+           </div>
+           
+       </section>
+   
   
+
+
+
     <!-- Footer-->
     <footer class="bg-light py-5">
         <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2024 - Company Name</div></div>
@@ -190,12 +164,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+  
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    <script>
-        $("#copyright").text(new Date().getFullYear());
-    </script>
+    <script src="static/js/sendEmail.js"></script>
+    </body>
 </html>
